@@ -1,0 +1,196 @@
+@media screen and (min-width: 600px){
+    nav{
+        height: 50px;
+        width: 100%;
+    }
+    #navbar {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    #navbar ul{
+        margin: 0;
+        padding: 0;
+    }
+    #navbar button{
+        display: block;
+        float: right;
+    }
+    #navbar i{
+        display: none;
+    }
+    #navbar ul li{
+        display: inline-block;
+        padding: 10px 20px;    
+    } 
+    #navbar .logo{
+        display: inline-block;
+        margin: 10px 20px;
+    }   
+    #navbar .logo img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    main{
+        display: inline-block;
+        margin-left: 399px;
+        margin-top: 30px;
+        border: 4px solid;
+        width: 45%;
+        height: 363px;
+    }
+    main header h3{
+        padding-top: 25px;
+    }
+    main footer span{
+        float: right;
+    }
+    #left ul {
+    display: inline-block;
+    float: left;
+    margin-top: -315px;
+    border: 2px solid black;
+    padding: 60px
+
+    }
+
+    advert #advert{
+        display: inline-block;
+        float: right;
+        height: 200px;
+        width: 128px;
+        background: yellow;
+        margin-top: -369px;
+        margin-right: 70px;
+    }
+
+    advert #advert2{
+        display: inline-block;
+        float: right;
+        height: 147px;
+        width: 128px;
+        background: yellow;
+        margin-top: -154px;
+        margin-right: 70px;
+    }
+    #footer{
+        display: inline-block;
+        margin-top: 42px;
+        width: 600px;
+        background: yellow;
+        height: 50px;
+        margin-left: 410px;
+    }
+    aside{
+    height: 70px;
+    background: yellow;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 69px;
+    }
+}
+
+.clearfix{
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: lightblue;
+    }
+
+    nav button {
+        position: relative;
+    	width: 100%;
+    	height: 60px;
+      
+    }
+    
+
+    button ul{
+      position: absolute;
+    opacity: 0;
+    top: -3px;
+    font-size: 20px;
+    left: -29px;
+    cursor: pointer;
+    color:red;
+
+        }
+
+	button:hover ul{
+        opacity:1;
+}
+
+    button ul li{
+        list-style: none;
+        display: inline-block;
+    }
+    
+    button i{
+        font-size: 44px;
+    	position: absolute;
+    	top: 4px;
+   	right: 4px;
+
+    }
+
+    main{
+        width: 100%;
+        height: 295px;
+        background: yellow;
+    }
+
+    footer span{
+        float: right;
+    }
+
+    #left{
+        width: 100%;
+        height: 200px;
+        background: yellow;
+        position: relative;
+        top: 10px;
+    }
+    #left ul{
+        position: absolute;
+        left: -35px;
+    }
+    #left ul li{
+        list-style: none;
+        padding-bottom: 10px;
+        cursor: pointer;
+    } 
+
+    #advert{
+        background: yellow;
+        width: 100%;
+        height: 100px;
+
+    }
+    #advert h3{
+        text-align: center;
+        font-size: 30px;
+        line-height: 100px;
+    }
+
+    #footer{
+        height: 100px;
+        width: 100%;
+        background: yellow;
+        position: absolute;
+        margin-top: 30px;
+    } 
+    #navbar .logo{
+        display: none;
+    }
+
+    #advert2{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+}
