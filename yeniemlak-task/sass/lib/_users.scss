@@ -1,0 +1,45 @@
+#users-list{
+    .container{
+         a:nth-child(1){
+            line-height:3;
+            border-left: 4px solid green;
+            padding-left: 3px;
+        }
+        .users{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            flex-flow: row wrap;
+            width: 805px;
+
+            .user-acc{
+                height: 17px;
+                width: 150px;
+                margin-right: 7px;
+                border-bottom: 2px solid grey;
+                position: relative;
+                margin-bottom: 5px;
+                &:hover{
+                    border-bottom-color: green;
+                    cursor: pointer;
+                }
+
+                i{
+                    color:#e5e5e5;
+                    position: absolute;
+                    font-size: 17;
+                    top: 2px;
+                    left: 3px;
+                }
+                span{
+                    color:black;
+                    position: absolute;
+                    top: -2px;
+                    left: 21px;
+                }
+            }
+            
+        }
+        
+    }
+}

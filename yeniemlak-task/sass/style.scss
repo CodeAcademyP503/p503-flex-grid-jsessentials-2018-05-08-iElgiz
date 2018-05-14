@@ -1,0 +1,17 @@
+$mainWidth: 990px;
+$colorGreen: rgb(132,174,62);
+$colorGrey: rgb(111,111,111);
+$colorOrange: rgb(246,168,40);
+$mainFont:'Oswald', sans-serif;
+
+@import "lib/common";
+@import "lib/navbar";
+@import "lib/topbar";
+@import "lib/vipadds";
+@import "lib/selling";
+@import "lib/last";
+@import "lib/users";
+@import "lib/useful";
+@import "lib/footer";
+@import "lib/rightSide";
+@import "lib/adverts";

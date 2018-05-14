@@ -1,0 +1,64 @@
+#selling-adds{
+    .container{   
+        a:nth-child(1){
+            line-height:3;
+            border-left: 4px solid green;
+            padding-left: 3px;
+        }
+        .wrap{
+            display: grid;
+            grid-template-columns: repeat(5, 150px);
+            grid-template-rows: repeat(2, 155px);
+            grid-gap: 7px;
+            .col{
+                position: relative;
+                &:hover{
+                box-shadow: 1px 1px grey;
+                cursor: pointer;
+                }
+
+                header{
+                    height: 23px;
+                    width: 100%;
+                    background: #807e73;
+                    span{
+                        color:$colorOrange;
+                        margin-left: 8px;
+                    }
+                    a{
+                        color:white;
+                        margin-left: 5px;
+                    }
+                }
+                content{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                
+                footer{
+                    height: 40px;
+                    width: 100%;
+                    background: #eff2f3;
+                    position: absolute;
+                    top:113px;
+                    
+                    
+                    h5{
+                        font-size: 13px;
+                        position: absolute;
+                        top: -21px;
+                        left: 5px;
+                    
+                    }
+                    span{
+                        position: absolute;
+                        top: 18px;
+                        left: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+}

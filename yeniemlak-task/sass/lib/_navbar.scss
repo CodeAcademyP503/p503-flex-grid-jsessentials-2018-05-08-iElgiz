@@ -1,0 +1,86 @@
+header{
+    #nav-bar{
+        background: grey;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        .container{
+            .logo{
+                position: absolute;
+                top: 5px;
+            }
+            .nav-bar{
+                ul{
+                    width: 430px;
+                    position: absolute;
+                    left: 432px;
+                    cursor: pointer;
+                    color:white;
+                    
+                    li{ 
+                    display: inline-block; 
+                    font-size: 15px;
+                    padding-right: 41px;
+                    &:hover{
+                        color:$colorOrange;
+                        }
+                    }
+                }
+            }
+            .search{
+                height: 23px;
+                width: 100px;
+                background: white;
+                position: absolute;
+                top: 15px;
+                right: 450px;
+                border-radius: 5px;
+                .search-text{
+                input{
+                    height: 13px;
+                    width: 70px;
+                    border-style: none;
+                    }
+                }
+                .search-icon{
+                    position: absolute;
+                    background: #b3b3b3;
+                    width: 30px;
+                    height: 23px;
+                    top: 0;
+                    right: 0;
+                    i{
+                        position: absolute;
+                        top: 0;
+                        font-size: 15px;
+                        padding: 5px 7px;
+                        color: white;
+                    }
+                    &:hover{
+                        background: #ff8710;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .add-adds{
+                height: 30px;
+                width: 140px;
+                background: $colorOrange;
+                float: right;
+                margin-top: 10px;
+                margin-right: 5px;
+                border-radius: 5px;
+                &:hover{
+                    background: #ff8710;
+                    cursor: pointer;                }
+                    }
+                h3{
+                    position: absolute;
+                    top: -7px;
+                    line-height: 2;
+                    color: white;
+                    right: 270px;
+                }
+        }
+    }
+}

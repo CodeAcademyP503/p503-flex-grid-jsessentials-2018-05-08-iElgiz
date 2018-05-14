@@ -1,0 +1,33 @@
+#topbar-right-side{
+    .container{
+        .right-side-flex{
+            display: flex;
+            flex-flow: column;
+            position: absolute;
+            right: 404px;
+            top: 83px;
+                .side{
+                    height: 26px;
+                    width: 163px;
+                    margin-bottom: 8px;
+                    border-radius: 4px;
+                    background: #f4ffe2;
+                    &:hover{    
+                        background-color: #FFDCAA;
+                        cursor: pointer;
+                    }
+                }
+                .side:nth-child(1){
+                    height: 26px;
+                    width: 163px;
+                    margin-bottom: 8px;
+                    border-radius: 4px;
+                    background: #84ae3e;
+                    &:hover{
+                        background-color: #F6A828;
+                    }
+                }
+        }
+
+    }
+}

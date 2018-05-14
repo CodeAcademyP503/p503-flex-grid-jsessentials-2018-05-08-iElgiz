@@ -1,0 +1,30 @@
+#useful-links{
+    .container{
+        a{
+            line-height:3;
+            border-left: 4px solid green;
+            padding-left: 3px
+        }
+        .link-flex{
+            width: 802px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            flex-flow: row wrap;
+        .link{
+            border: 1px solid;
+            height: max-content;
+            width: max-content;
+            border-radius: 2px;
+            padding: 3px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+
+            &:hover{
+                background: #FFDCAA;
+                cursor: pointer;
+            }
+            }
+        }       
+    }
+}

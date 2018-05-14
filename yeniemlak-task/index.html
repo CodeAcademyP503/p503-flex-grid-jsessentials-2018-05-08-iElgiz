@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YeniEmlak.az</title>
+</head>
+<body>
+    <header>
+        <section id="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">     
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li>Ana Səhifə</li>
+                        <li>Axtarış</li>
+                        <li>Rieltor</li>
+                        <li>Faydalı</li>
+                        <li>Əlaqə</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <div class="search-text">
+                        <input type="text" value="search" >
+                    </div>
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="add-adds">
+                    <h3>+ Elan Ver</h3>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </header>
+    <content>
+        <section id="top-bar">
+            <div class="container">
+            <div class="top-bar">
+                <div class="col">
+            <label>
+                <span>Əmlakın növü</span>
+                <select name="emlak" id="emlak">
+                    <option value="1">Bina ev menzil</option>
+                    <option value="2">Heyet evi / Villa</option>
+                    <option value="3">Torpaq sahesi</option>
+                    <option value="4">Obyekt</option>
+                    <option value="5">Ofis</option>
+                    <option value="6">Qaraj</option>
+                    <option value="7">Diger</option>
+                </select>
+            </label>
+            <label>
+                <span>Elanın növü</span>
+                <select name="elanNov" id="elanNov">
+                    <option value="1">Satilir</option>
+                    <option value="2">Kiraye ayliq</option>
+                    <option value="3">Kiraye gunluk</option>
+                </select>
+            </label>
+            <label>
+                <span>Seher</span>
+                <select name="city" id="city">
+                    <option value="1">Butun seherler</option>
+                    <option value="2">Baki</option>
+                    <option value="3">Abseron</option>
+                    <option value="4">Gence</option>
+                    <option value="5">Sabirabad</option>
+                    <option value="6">Lenkeran</option>
+                    <option value="7">Quba</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="colSecond">
+            <label>
+                <span>Qiymət</span>
+                <select name="price" id="price">
+                    <option value="0">Min</option>
+                    <option value="1">500</option>
+                    <option value="2">1000</option>
+                    <option value="3">1500</option>
+                    <option value="4">2000</option>
+                    <option value="5">2500</option>
+                </select>
+                <select name="price2" id="price2">
+                    <option value="0">Max</option>
+                    <option value="1">500</option>
+                    <option value="2">1000</option>
+                    <option value="3">1500</option>
+                    <option value="4">2000</option>
+                    <option value="5">2500</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Mərtəbə</span>
+                <select name="floor" id="floor">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">4</option>
+                </select>
+                <select name="floor2" id="floor2">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Otaq</span>
+                <select name="room" id="room">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">4</option>
+                </select>
+                <select name="room2" id="room2">
+                    <option value="0"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+
+
+            <label>
+                <span>Sahesi</span>
+                <select name="area" id="area">
+                    <option value="0">min</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                    <option value="4">40</option>
+                    <option value="5">50</option>
+                </select>
+                <select name="area2" id="area2">
+                    <option value="0">max</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                    <option value="4">40</option>
+                    <option value="5">50</option>
+                </select>
+            </label>
+
+
+        </div>
+        <div class="under">
+            <label for="advsearch">
+                <i class="fas fa-search">Ətraflı axtarış </i>
+            </label>
+
+            <label for="select">
+                <button> </button>
+                Yalnız şəkilli
+            </label>
+            <label for="select">
+                <button> </button>
+                Kredit
+            </label>
+
+            <button class="axtar">Axtar</button>
+        </div>
+        </div>
+        </div>
+
+        </section>
+    </content>
+    <section id="topbar-right-side">
+        <div class="container">
+            <div class="right-side-flex">
+                <div class="side">
+                   <center> ► İstifadəçi girişi</center>
+                </div>
+                <div class="side">
+                    <center>Elan verilmə qaydası</center>
+                </div>
+                <div class="side">
+                    <center>Elana düzəliş və silmək</center>
+                </div>
+                <div class="side">
+                   <center>Bakıda evlərin qiyməti</center> 
+                </div>
+                <div class="side">
+                   <center>Ödənişli elan verilməsi</center> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="adverts">
+        <div class="container">
+            <div class="adverts-flex">
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+                <div class="advert">
+                    <img src="images/yeniavto.jpg" alt="yeniavto.az">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="vip-adds">
+        <div class="container">
+            <a>VIP Elanlar</a>
+            <div class="wrap">
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                            <header>
+                                <span>200000</span>
+                                <a>AZN / Satilir</a>
+                            </header>
+                            <content>
+                                <img src="images/ev1.JPG" alt="adv1">
+                            </content>
+                            <footer>
+                                <h5>Həyət evi / Villa 200 m2</h5>
+                                <span>Bakı,Xəzər rayonu</span>
+                            </footer>
+                        </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+               <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+               <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section id="selling-adds">
+        <div class="container">
+            <a>Satılır / Son əlavə olunanlar</a>
+            <div class="wrap">
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+                <div class="col">
+                    <header>
+                        <span>200000</span>
+                        <a>AZN / Satilir</a>
+                    </header>
+                    <content>
+                        <img src="images/ev1.JPG" alt="adv1">
+                    </content>
+                    <footer>
+                        <h5>Həyət evi / Villa 200 m2</h5>
+                        <span>Bakı,Xəzər rayonu</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="last-adds">
+            <div class="container">
+                <a>Kirayə / Son əlavə olunanlar</a>
+                <div class="wrap">
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                    <div class="col">
+                        <header>
+                            <span>200000</span>
+                            <a>AZN / Satilir</a>
+                        </header>
+                        <content>
+                            <img src="images/ev1.JPG" alt="adv1">
+                        </content>
+                        <footer>
+                            <h5>Həyət evi / Villa 200 m2</h5>
+                            <span>Bakı,Xəzər rayonu</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="users-list">
+        <div class="container">
+            <a>Istifadəçilərimiz</a>
+            <div class="users">
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+                <div class="user-acc">
+                    <i class="fas fa-user-alt"></i>
+                    <span>Sahib (Qaraçöp)</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section id="useful-links">
+        <div class="container">
+            <a >Faydalı linklər</a>
+            <div class="link-flex">
+                <div class="link">
+                    Bakida Gunluk Kiraye Evler
+                </div>
+                
+                <div class="link">
+                    Bakida ucuz Kiraye Evler
+                </div>
+                <div class="link">
+                    Bakida Kreditle Satilan Evler
+                </div>
+                <div class="link">
+                    2018 Bakida evlerin qiymeti statistikasi                </div>
+                <div class="link">
+                    Azerbaycanda-yay-istiraheti
+                </div>
+                <div class="link">
+                    İpoteka kreditlərinin verilməsi şərtləri
+                </div>
+                <div class="link">
+                    Yeniavto.az Avtomobil elanlari sayti
+                </div>
+                <div class="link">
+                    Yenitemir.az Təmir tikinti dizayn
+                </div>
+                <div class="link">
+                    Daşınmaz əmlak elanlari axtarışı
+                </div>
+                <div class="link">
+                    ev menzil heyet evleri villa alqi satqi kiraye elanlari                </div>
+                <div class="link">
+                    Qebelede gunluk kiraye evler
+                </div>
+                <div class="link">
+                    İsmayıllıda gundelik heyet evi
+                </div>
+                <div class="link">
+                    Qubada kiraye bag evi
+                </div>
+                <div class="link">
+                    Xırdalanda AAAF parkda kreditle satilan evlər
+                </div>
+                <div class="link">
+                    Masazirda kreditle satilan evler
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <center >Sayt administrasiyası verilən elanlara görə məsuliyyət daşımır. </center>
+        <center >Copyright © 2016. www.yeniemlak.az ! Bütün hüquqlar qorunur.</center>
+        <center >Tel: (+994 55) 261 21 26; E-mail: info@yeniemlak.az</center>
+    </footer>
+
+</body>
+</html>
